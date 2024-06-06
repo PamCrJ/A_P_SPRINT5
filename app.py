@@ -20,8 +20,8 @@ scatter_button = st.button('Construir un scatterplot')
 
 if scatter_button:
         
-        st.write('Creación de un gráfico de dispersión para visualizar el modelo - año de los autos en relación a los días que llevan anunciados')
+        st.write('Creación de un gráfico de dispersión para visualizar el kiloetraje en relación al precio')
 
-        fig = px.scatter(car_data, x="model_year", y="days_listed")
+        fig = px.scatter(car_data, x="odometer", y="price")
 
         st.plotly_chart(fig, use_container_width=True)
